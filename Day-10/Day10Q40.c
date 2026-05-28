@@ -2,6 +2,7 @@
 
 int main() {
     int n,t;
+    int ch = 'A';
     printf("Enter number: ");
     scanf("%d",&n);
     for(int i = 1;i<=n;i++){
@@ -12,7 +13,7 @@ int main() {
         for(int j =0;j<i*2-1;j++){
             if(j<i){t++;}
             else {t--;}
-            printf("%d",t);
+            printf("%c",t-1+ch);
             
         }
         printf("\n");
